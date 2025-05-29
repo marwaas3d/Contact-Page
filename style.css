@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    padding-bottom: 20px;
+    background-image: url('./resources/background.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.content h1{
+    font-size: 58px;
+    max-width: 29rem;
+}
+
+.content p{
+    font-size: 28px;
+    max-width: 32rem;
+}
+
+form{
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+}
+
+.form-container {
+    width: 50% !important;
+  }
+
+@media (max-width: 992px) {
+    .form-container {
+      width: 70% !important;
+    }
+  }
+
+@media (max-width: 768px) {
+    .form-container {
+      width: 97% !important;
+    }
+  }
+
+
+.custom-select{
+    position: relative;
+}
+.custom-select::after{
+  content: "\f078"; 
+  font-family: "Font Awesome 6 Free";
+  font-weight: 700;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; 
+}
+
+button:hover{
+    background-color: white !important;
+}
+
+
+::selection{
+    background-color: rgb(102, 9, 189);
+    color: white;
+}
+
+::-webkit-scrollbar{
+    width: 13px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(143, 51, 230);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
